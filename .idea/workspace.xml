@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="60ef3935-b0e7-456f-b83d-d4a718078c91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.flowconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuildScripts/pack-chrome.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuildScripts/pack-safari.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuildScripts/xar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/fonts/Montserrat-SemiBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/chrome/popup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/chrome/unsupportedSoft.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/edge/popup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/edge/unsupportedSoft.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/firefox/popup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/firefox/unsupportedSoft.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/html/safari/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/figLeafLogo@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon-safari-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconLogoHintTop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_avatar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_card-details.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_change-password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_check-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_close-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_context-menu-popup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_context-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_create-card-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_earth.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_earth_inactive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_enter-manually.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_enter_info@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_fl-check-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_fl-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_fl-pass-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_fo-info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_green-man.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_hide-password.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_hint-animation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_hint-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_login-info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_never-use.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_next-site.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_question.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_refill-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_show-password.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_succ-change-pass.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_survey-btn-back.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_survey-btn-ds-rate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_survey-question.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_top-hint-exclamation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_top_hint-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_top_hint_active_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/icon_type-card-number.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconmore@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconremove@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/canBeLeaked/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/disabled/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leaked/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSite/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/leakedSiteDisabled/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/iconset/update/icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/image_hint_card@2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/image_hint_signin@2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/image_hint_signup@2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/image_survey-end@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/no-connection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding-dot-active.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding-dot.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/onboarding_start.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/images/question@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/manifests/chrome/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/manifests/edge/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/resources/manifests/firefox/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Analytics/Analytics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Antitracker/AntiTracking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Antitracker/DBChecker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Antitracker/UrlChecker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/ApiConnector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/Connector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/Encryptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/NativeMessageConnector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/WebSocketConnector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/noise/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/noise/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ApiConnector/communication/noise/noise-c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/FeaturesManager/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/IconChooser/IconChooser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/IconChooser/IconChooserChrome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/IconChooser/IconChooserEdge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/IconChooser/IconChooserFirefox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/IconChooser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Messenger/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Proxy/ProxyProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Proxy/ProxyProviderChrome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Proxy/ProxyProviderFirefox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Proxy/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/SettingsManager/SettingsManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/SubmitHandlers/SubmitFormHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/TabManager/TabManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ViewsLogic/NpsDsSurvey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ViewsLogic/OnBoarding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/ViewsLogic/PopupPriorityController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/Wizard/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/chrome/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/edge/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/background/firefox/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/AppContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/BaseHighlightComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/BaseHighlightComponentContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/BaseHighlightComponentWithMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/ChangePasswordNew/ChangePasswordNew.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/ChangePasswordNew/ChangePasswordNewContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/FormOther/FormOther.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/FormOther/FormOtherContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/FormOther/FormOtherEmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/FormOther/FormOtherPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/FormOther/FormOtherUserName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Hints/HintMaskingCard/HintMaskingCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Hints/HintMaskingCard/HintMaskingCardContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Hints/HintSignIn/HintSignIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Hints/HintSignIn/HintSignInContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Hints/HintSignUp/HintSignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Hints/HintSignUp/HintSignUpContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginEmail/LoginEmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginEmail/LoginEmailContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginHighlightComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginHighlightComponentContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginPassword/LoginPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginPassword/LoginPasswordContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginUserName/LoginUserName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/LoginUserName/LoginUserNameContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Popups/PopupMaskingCard/PopupMaskingCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Popups/PopupMaskingCard/PopupMaskingCardContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Popups/PopupSignIn/PopupSignIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Popups/PopupSignIn/PopupSignInContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Popups/PopupSignUp/PopupSignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/Popups/PopupSignUp/PopupSignUpContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/SignupEmail/SignupEmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/SignupEmail/SignupEmailContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/SignupPassword/SignupPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/SignupPassword/SignupPasswordContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/SignupUserName/SignupUserName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/SignupUserName/SignupUserNameContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/DsSurvey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/DsSurveyContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/NpsAndDsSurvey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/NpsSurvey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/NpsSurveyContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/content/Congratulations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/content/FeedBack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/content/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/content/Question.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/content/Rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsAndDsSurvey/content/TextWrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/NpsPopupSurvey/steps/GradingScaleComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/Carousel/OnBoardingCarouselComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/Carousel/OnBoardingCarouselContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/Carousel/OnBoardingPrefPopupComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/OnBoarding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/OnBoardingContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/Start/OnBoardingStartComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/OnBoarding/Start/OnBoardingStartContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/TopHintsComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/TopHintsComponentContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/Wizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/WizardComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/WizardComponentContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/WizardContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/steps/WizardStep1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/steps/WizardStep2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/TopHints/Wizard/steps/WizardStep3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/behaviour/CreditCardFieldBehaviour.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/behaviour/EmailFieldBehaviour.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/behaviour/FieldBehaviourInterface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/behaviour/PasswordFieldBehaviour.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/behaviour/PasswordFieldBehaviourContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/behaviour/UserNameFieldBehaviour.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/base/animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/base/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/base/helpers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/base/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/base/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/_nps-ds-popup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/_preferences-popup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/card_create.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/card_fill.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/hint.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/popup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/top_single_hint.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/blocks/wizard_hint.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/chrome/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/chrome/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/chrome/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/chrome/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/edge/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/edge/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/edge/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/edge/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/firefox/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/firefox/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/firefox/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/firefox/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Components/default/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/FormDetector/formDetector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Messenger/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/PageObserver/PageObserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/AnalyticActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/AppActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/EnabledFeaturesActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/HintsActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/LoginActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/NpsAndDsSurveyActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/OnBoardingAction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/SignupActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/TopHintsActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/actions/WizardActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/middleware/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/BaseHighlightReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/changePasswordNewReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/changePasswordOldReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/enabledFeatures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/formOtherEmailReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/formOtherPasswordReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/formOtherUserNameReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/hintsReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/infoFromSoftReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/loginEmailReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/loginPasswordReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/loginUserNameReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/npsAndDsSurveyReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/onBoardingReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/signupEmailReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/signupPasswordReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/signupUserNameReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/topHintsReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/Store/reducers/wizardReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/SubmitFormHandlers/onSubmitForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/TopHints/TopHint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/adapter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/content_helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/iFrameMessenger/IFrameMessenger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/types/fields.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/content/types/hints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/CONSTANTS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/ObjectArray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/PromiseAllAsObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/createEmptyIterableObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/debugTypes/debugTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/debugTypes/debugTypes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/ejs/ejs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/ejs/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/fieldClasses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/filterByCoordinate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getBlacklistConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getClosestParent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getDomain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getElementPosition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getHighestZindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getHostname.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getOSInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getParentNodeByCondition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getParentOverflowYAuto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getParentPositionFixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/getParents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/guid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/htmlToElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/htmlToElements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/httpGet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/injectScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isDate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isElementInsideViewport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isElementVisible.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isFunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isObjectEmpty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/isframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/kebabCase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/mergeDeap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/objectToCssPropsString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/onResize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/regexpConverter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/regexpConverterSafari.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/sendBeacon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/sendPost.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/triggerElementValueChange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/helpers/triggerSelectValueChange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/antiTracking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/creditCards.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/extensionMessages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/features.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/popupPriorityController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/softMessages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/interfaces/wizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/Messenger/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/base/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/base/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/blocks/_connection-popup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/chrome/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/chrome/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/edge/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/edge/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/firefox/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/firefox/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/popup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/css/safari/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrivacyApp/sources/popup/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/db/attributes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/db/credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addManifestName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buildConstants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../checkVulnerability.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ci/pack-chrome.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ci/pack-safari.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ci/push-edge.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ci/xar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../patch-content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/createEmptyIterableObject.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/guid.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isDate.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isElement.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isElementVisible.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isFunction.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isNumber.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isObject.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isObjectEmpty.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/isString.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/helpers/kebabCase.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spec/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/change-password-login/change-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/change-password-login/login-email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/change-password/change-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/change-password/signup-email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/form-other/login-email-second-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/form-other/login-username-second-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/form-other/signup-email-first-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/form-other/signup-email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/form-other/signup-username-first-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/form-other/signup-username.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/hidden-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/iframe/iframe-forms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/iframe/iframe-login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/iframe/iframe-signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/new-pass-without-old/change-pass-second-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/new-pass-without-old/signup-email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/new-pass-without-old/signup-username.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/one-page/login-signup-signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/one-page/login-signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/one-page/several-forms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/position-fixed/fixed-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/credit-card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/login-email-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/login-username-email-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/login-username-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/signup-email-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/signup-uncertain-email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/signup-username-email-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/separate-page/signup-username-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/two-pages/login-email-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/two-pages/login-second-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/two-pages/login-username-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/two-pages/signup-email-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/two-pages/signup-second-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/two-pages/signup-username-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pages/unsupported-properties/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webpack.config.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/js/background.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../lenovo/tan-client-experience/vtr-ui/node_modules/typescript/lib/watchGuard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extension/js/popup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="106" column="124" selection-start-line="106" selection-start-column="124" selection-end-line="106" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/html/popup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="30" column="48" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/js/content.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>brow</find>
+      <find>tabs</find>
+      <find>GetPageDomain</find>
+      <find>+++</find>
+      <find>cookiesFromCurrentSite</find>
+      <find>&amp;&amp;&amp;&amp;</find>
+      <find>urls &amp;&amp;&amp;&amp; L</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/extension/manifest.json" />
+        <option value="$PROJECT_DIR$/extension/html/popup.html" />
+        <option value="$PROJECT_DIR$/extension/js/content.js" />
+        <option value="$PROJECT_DIR$/extension/js/background.js" />
+        <option value="$PROJECT_DIR$/extension/js/popup.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/cookie-cache-prototype.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="125" />
+    <option name="y" value="35" />
+    <option name="width" value="1530" />
+    <option name="height" value="950" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60ef3935-b0e7-456f-b83d-d4a718078c91" name="Default Changelist" comment="" />
+      <created>1565268081165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565268081165</updated>
+      <workItem from="1565268082484" duration="21607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21607000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/extension/images/icon-16.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/images/coockie-icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../lenovo/tan-client-experience/vtr-ui/node_modules/typescript/lib/watchGuard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/html/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="106" column="124" selection-start-line="106" selection-start-column="124" selection-end-line="106" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
