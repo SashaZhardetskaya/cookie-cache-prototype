@@ -67,7 +67,6 @@ chrome.tabs.query({
 
 
 
-
 const requestsFromTabs = {};
 chrome.webRequest.onCompleted.addListener(
     (details) => {
