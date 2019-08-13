@@ -7,35 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script async src="../js/popup.js"></script>
+    <style>
+        body {
+            width: 550px;
+        }
+    </style>
 </head>
 <body>
 
 
-<button>See cookies</button>
-<button>See cache</button>
-<button>See history</button>
+<button class="js-cookies-open-all-btn">See all cookies</button>
+<!--<button class="js-cache-open-all-btn">See all cache</button>-->
+<button class="js-history-open-all-btn">See all history</button>
+<button class="js-downloads-open-all-btn">See all downloads</button>
+<p>* we can't lead user to 'cache' page, because it's been removed since v.66</p>
 
-<button>Clear all cookies</button>
-<p class="js-cookies-test">-------------</p>
-
+<h3>--- cookies By Domain ---</h3>
 <button class="js-cookies-show-by-domain-btn">Show all cookies set by </button>
 <ol class="js-cookies-show-by-domain-list"></ol>
+<button class="js-cookies-clear-by-domain-btn">Clear all cookies set by </button>
+
+<button class="js-cookies-show-by-google-btn">Show all cookies set by 'google.com' (or any other site)</button>
+<ol class="js-cookies-show-by-google-list"></ol>
+<button class="js-cookies-clear-by-google-btn">Clear all cookies set by 'google.com' (or any other site)</button>
 
 
-<button>Clear all cookies set by 'amazon'</button>
-<button>Clear all cookies set by 'google'</button>
-
-
+<h3>--- cookies By Current Site ---</h3>
 <button class="js-cookies-show-current-site-btn">See all cookies on a current site (set by current site)</button>
 <ol class="js-cookies-show-current-site-list"></ol>
 <button class="js-cookies-clear-current-site-btn">Clear cookies on a current site (set by current site)</button>
 
 
-<button>All cookies count</button>
+<h3>--- All cookies for All sites ---</h3>
+<button class="js-cookies-count-all-btn">All cookies count</button>
+<p class="js-cookies-count-all-number"></p>
+<button class="js-cookies-clear-all-btn">Clear all cookies</button>
+
+<h3>--- Additional cookie features (not implemented, but possible to implement) ---</h3>
 <button>Removed Cookies count</button>
+<button>Clear all cookies in 3 seconds</button>
+<button>Clear all cookies every 10 minutes</button>
 
-<button>Clear cookies every 10 minutes</button>
+<h3>--- Caches ---</h3>
+<button class="js-caches-clear-current-site-btn">Remove caches from current tab</button>
+<button class="js-caches-clear-all-btn">Remove ALL caches</button>
+<button class="js-caches-clear-past-ten-minutes-btn">Remove all caches for past 10 minutes</button>
+<p>* we can NOT show caches by domain. We can only show requests, which response was cached earlier
+    (so we will not show any cache in first site load).
+    We can NOT show size or any other data.
+</p>
+<p>* ??? we may be able to read caches from file system. it's located: C:\Users\zhara\AppData\Local\Google\Chrome\User Data\Default\ {'Code Cache' and 'Cache' directories} </p>
 
+<h3>--- History ---</h3>
+<button class="js-history-clear-current-domain-btn">Clear history for </button>
+<button class="js-history-clear-all-btn">Clear ALL history</button>
+<button class="js-history-clear-past-ten-minutes-btn">Clear all history for past 10 minutes</button>
+<p>* we can also show history just for current domain</p>
+
+<h3>--- Downloads ---</h3>
+<button class="js-downloads-clear-current-domain-btn">Clear downloads from </button>
+<button class="js-downloads-clear-all-btn">Clear ALL downloads</button>
+<button class="js-downloads-clear-past-ten-minutes-btn">Clear all downloads for past 10 minutes</button>
+
+<br>
+<br>
+<p>* we can also Get an information about pages that the user has visited often and recently: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/topSites/get</p>
 
 </body>
 </html>

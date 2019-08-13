@@ -21,6 +21,8 @@
     "default_title": "FigLeaf"
   },
   "permissions": [
+    "history",
+    "downloads",
     "privacy",
     "cookies",
     "webRequest",
@@ -32,7 +34,8 @@
     "<all_urls>",
     "storage",
     "proxy",
-    "webNavigation"
+    "webNavigation",
+    "browsingData"
   ],
   "web_accessible_resources": [
     "images/*.png",

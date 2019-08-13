@@ -1,10 +1,4 @@
 
-chrome.cookies.getAll({domain: "amazon.com"}, function(cookies) {
-  console.log('cookies for amazon', cookies);
-  for(var i=0; i<cookies.length;i++) {
-    // chrome.cookies.remove({url: "http://domain.com" + cookies[i].path, name: cookies[i].name});
-  }
-});
 
 chrome.cookies.getAllCookieStores((stores) => {
   console.log('++++++++++++++ stores', stores);
@@ -24,40 +18,13 @@ chrome.cookies.getAll({url: "https://www.amazon.com/"}, function(cookies) {
   }
 });
 
-
 chrome.cookies.getAll({name: "skin"}, function(cookies) {
   console.log('cookies for skin', cookies);
   for(var i=0; i<cookies.length;i++) {
     // chrome.cookies.remove({url: "http://domain.com" + cookies[i].path, name: cookies[i].name});
   }
 });
-chrome.cookies.getAll({name: "session-id-time"}, function(cookies) {
-  console.log('cookies for skin', cookies);
-  for(var i=0; i<cookies.length;i++) {
-    // chrome.cookies.remove({url: "http://domain.com" + cookies[i].path, name: cookies[i].name});
-  }
-});
-chrome.cookies.getAll({name: "zhara"}, function(cookies) {
-  console.log('cookies for skin', cookies);
-  for(var i=0; i<cookies.length;i++) {
 
-    // chrome.cookies.remove({url: "http://domain.com" + cookies[i].path, name: cookies[i].name});
-  }
-});
-
-chrome.cookies.getAll({domain: "google.com"}, function(cookies) {
-  console.log('cookies for amazon', cookies);
-  for(var i=0; i<cookies.length;i++) {
-    // chrome.cookies.remove({url: "http://domain.com" + cookies[i].path, name: cookies[i].name});
-  }
-});
-
-chrome.cookies.getAll({domain: "github.com"}, function(cookies) {
-  console.log('cookies for github', cookies);
-  for(var i=0; i<cookies.length;i++) {
-    // chrome.cookies.remove({url: "http://domain.com" + cookies[i].path, name: cookies[i].name});
-  }
-});
 
 
 
@@ -95,12 +62,29 @@ chrome.tabs.query({
   }); // chrome.webNavigation.getAllFrames
 }); // chrome.tabs.query
 
-//
-// chrome.browserAction.onClicked.addListener((tab) => {
-//   console.log('BA clicked');
-//
-//
-//   // ingect iframe here
-// });
 
 
+
+
+
+
+const requestsFromTabs = {};
+chrome.webRequest.onCompleted.addListener(
+    (details) => {
+      // if (details.fromCache) {}
+      const urlsByTab = requestsFromTabs[details.tabId];
+      requestsFromTabs[details.tabId] = urlsByTab ? [...urlsByTab, details.url] : [details.url];
+      console.log('requestsFromTabs', requestsFromTabs);
+    },
+    {urls: ['<all_urls>']},
+);
+chrome.runtime.onMessage.addListener((message, sender) => {
+  if (message.type === 'RemoveCacheFromTab') {
+    console.log('requestsFromTabs[message.payload]', requestsFromTabs[message.payload]);
+    // sendMessageGlobal({type: 'GetAllCookiesFromContent', payload: document.cookie})
+
+    chrome.browsingData.removeCache({origins: requestsFromTabs[message.payload] || [], since: 0, originTypes: {protectedWeb: true}}, (resp) => {});
+
+    chrome.browsingData.removeCacheStorage({origins: requestsFromTabs[message.payload], since: 0, originTypes: {protectedWeb: true}}, (resp) => {});
+  }
+});

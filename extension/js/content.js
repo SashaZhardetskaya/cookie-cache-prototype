@@ -3,10 +3,6 @@ const sendMessageGlobal = (message) => {
     chrome.runtime.sendMessage(message);
 };
 
-function eraseCookie(name) {
-    document.cookie = name + '=; Max-Age=0'
-}
-
 chrome.runtime.onMessage.addListener((message, sender) => {
     console.log('message', message);
     console.log('sender', sender);
@@ -16,18 +12,23 @@ chrome.runtime.onMessage.addListener((message, sender) => {
         sendMessageGlobal({type: 'GetAllCookiesFromContent', payload: document.cookie})
     }
 
-    if (message.type === 'EraseAllCookiesFromContent') {
-        console.log('before erase', document.cookie);
-        document.cookie.split('; ').forEach(name => {
-            console.log('name', name);
-            eraseCookie(name)
-        });
-        console.log('after erase', document.cookie);
-
-        sendMessageGlobal({type: 'EraseAllCookiesFromContent', payload: document.cookie})
-    }
-
 });
+
+
+
+// caches.open('v1').then(function(cache) {
+//     return cache.add(
+//         'https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browsingData/RemovalOptions'
+//     );
+// })
+
+
+// caches.keys().then(function(keys) {
+//     console.log('keys2', keys);
+//     keys.forEach(function(request, index, array) {
+//         console.log('request, index, array', request, index, array);
+//     });
+// });
 
 // sendMessageGlobal({type: 'GetPageDomain', payload: this.document.location.host});
 
