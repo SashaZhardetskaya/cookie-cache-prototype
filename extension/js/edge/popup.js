@@ -127,8 +127,6 @@ cookiesOnCurrentSiteShowBtn.addEventListener('click', () => {
     })
 });
 cookiesOnCurrentSiteClearBtn.addEventListener('click', () => {
-    console.log('&&&&&&&& cookiesFromCurrentSite', cookiesFromCurrentSite);
-    console.log('&&&&&&&& allCookies', allCookies);
     const expandedCookieFromSite = allCookies.filter((cookieItem) => {
         for (let i=0; i < cookiesFromCurrentSite.length; i++) {
             if (cookiesFromCurrentSite[i].name === cookieItem.name && cookiesFromCurrentSite[i].value === cookieItem.value) {
@@ -136,12 +134,55 @@ cookiesOnCurrentSiteClearBtn.addEventListener('click', () => {
             }
         }
     });
-    console.log('&&&&&&&&&&& expandedCookieFromSite', expandedCookieFromSite);
     expandedCookieFromSite.forEach(cookie => {
         browser.cookies.remove({ url: "http" + (cookie.secure ? "s" : "") + "://" + cookie.domain + cookie.path, name: cookie.name });
     });
     cookiesOnCurrentSiteClearBtn.append(' - DONE');
     updateAllCookies()
+});
+
+
+
+// cookies By Domain (+3d party and more)
+const cookiesThirdPartiessShowBtn = document.getElementsByClassName('js-cookies-show-third-parties-btn')[0];
+const cookiesThirdPartiessList = document.getElementsByClassName('js-cookies-show-third-parties-list')[0];
+const cookiesThirdPartiessClearBtn = document.getElementsByClassName('js-cookies-clear-third-parties-btn')[0];
+cookiesThirdPartiessShowBtn.addEventListener('click', () => {
+    cookiesThirdPartiessList.innerHTML = 'start!!!';
+    browser.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: currentTabId});
+    onMessage(message => {
+        if (message.type === 'GetAllOutgoingUrls') {
+            const hostnamesArr = message.payload.map(url => url.replace(/(https?:\/\/)?(www.)?/i, '')).filter((v, i, a) => a.indexOf(v) === i);
+            hostnamesArr.forEach(hostname => {
+                browser.cookies.getAll({domain: hostname}, function(cookies) {
+                    cookies.forEach((cookie) => {
+                        const cookieItem = document.createElement('li');
+                        cookieItem.innerHTML = `${cookie.name} : ${cookie.value}`;
+                        cookiesThirdPartiessList.appendChild(cookieItem);
+                    })
+                });
+            });
+        }
+    });
+});
+
+cookiesThirdPartiessClearBtn.addEventListener('click', () => {
+    browser.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: currentTabId});
+    onMessage(message => {
+        if (message.type === 'GetAllOutgoingUrls') {
+            const hostnamesArr = message.payload.map(url => url.replace(/(https?:\/\/)?(www.)?/i, '')).filter((v, i, a) => a.indexOf(v) === i);
+            hostnamesArr.forEach(hostname => {
+                browser.cookies.getAll({domain: hostname}, function(cookies) {
+                    cookies.forEach((cookie) => {
+                        browser.cookies.remove({ url: "http" + (cookie.secure ? "s" : "") + "://" + cookie.domain + cookie.path, name: cookie.name });
+                    })
+                });
+            });
+        }
+    });
+    cookiesThirdPartiessClearBtn.append(' - DONE');
+
+    updateAllCookies();
 });
 
 
@@ -161,30 +202,6 @@ cookiesAllClearBtn.addEventListener('click', () => {
     });
     cookiesAllClearBtn.append(' - DONE');
     updateAllCookies()
-});
-
-
-// Cache
-const cacheCurrentPageRemoveBtn = document.getElementsByClassName('js-caches-clear-current-site-btn')[0];
-const cacheAllRemoveBtn = document.getElementsByClassName('js-caches-clear-all-btn')[0];
-const cacheForPastTenMinutesRemoveBtn = document.getElementsByClassName('js-caches-clear-past-ten-minutes-btn')[0];
-cacheCurrentPageRemoveBtn.addEventListener('click', () => {
-    browser.runtime.sendMessage({type: 'RemoveCacheFromTab', payload: currentTabId});
-    cacheCurrentPageRemoveBtn.append(' - DONE');
-});
-cacheAllRemoveBtn.addEventListener('click', () => {
-    browser.browsingData.removeCache({}, (resp) => { // C:\Users\zhara\AppData\Local\Google\Chrome\User Data\Default\Code Cache
-    });
-    browser.browsingData.removeCacheStorage({}, (resp) => { // C:\Users\zhara\AppData\Local\Google\Chrome\User Data\Default\Cache
-        cacheAllRemoveBtn.append(' - DONE');
-    });
-});
-cacheForPastTenMinutesRemoveBtn.addEventListener('click', () => {
-    console.log('cacheForPastTenMinutesRemoveBtn');
-    browser.browsingData.removeCache({since: new Date(Date.now() - 600000).getTime()}, (resp) => { // C:\Users\zhara\AppData\Local\Google\Chrome\User Data\Default\Code Cache
-    });
-    browser.browsingData.removeCacheStorage({since: new Date(Date.now() - 600000).getTime()}, (resp) => { // C:\Users\zhara\AppData\Local\Google\Chrome\User Data\Default\Cache
-    });
 });
 
 

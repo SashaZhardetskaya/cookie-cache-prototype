@@ -14,9 +14,12 @@ browser.webRequest.onCompleted.addListener(
     {urls: ['<all_urls>']},
 );
 browser.runtime.onMessage.addListener((message, sender) => {
+    console.log('******** message', message);
   if (message.type === 'RemoveCacheFromTab') {
     console.log('requestsFromTabs[message.payload]', requestsFromTabs[message.payload]);
-    // sendMessageGlobal({type: 'GetAllCookiesFromContent', payload: document.cookie})
     browser.browsingData.removeCache({hostnames: requestsFromTabs[message.payload] || [], since: 0});
+  }
+  if (message.type === 'GetAllOutgoingUrls') {
+      browser.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: requestsFromTabs[message.payload]})
   }
 });

@@ -86,4 +86,8 @@ chrome.runtime.onMessage.addListener((message, sender) => {
 
     chrome.browsingData.removeCacheStorage({origins: requestsFromTabs[message.payload], since: 0, originTypes: {protectedWeb: true}}, (resp) => {});
   }
+  if (message.type === 'GetAllOutgoingUrls') {
+    chrome.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: requestsFromTabs[message.payload]})
+  }
+
 });

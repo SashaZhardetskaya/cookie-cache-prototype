@@ -136,6 +136,53 @@ cookiesByGoogleClearBtn.addEventListener('click', () => {
 
 
 
+// cookies By Domain (+3d party and more)
+const cookiesThirdPartiessShowBtn = document.getElementsByClassName('js-cookies-show-third-parties-btn')[0];
+const cookiesThirdPartiessList = document.getElementsByClassName('js-cookies-show-third-parties-list')[0];
+const cookiesThirdPartiessClearBtn = document.getElementsByClassName('js-cookies-clear-third-parties-btn')[0];
+cookiesThirdPartiessShowBtn.addEventListener('click', () => {
+    cookiesThirdPartiessList.innerHTML = '';
+    chrome.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: currentTabId});
+    onMessage(message => {
+        console.log('#### message.payload', message.payload);
+        if (message.type === 'GetAllOutgoingUrls') {
+            const hostnamesArr = message.payload.map(url => new URL(url).hostname.replace(/(https?:\/\/)?(www.)?/i, '')).filter((v, i, a) => a.indexOf(v) === i);
+            console.log('#### hostnamesArr', hostnamesArr);
+            hostnamesArr.forEach(hostname => {
+                chrome.cookies.getAll({domain: hostname}, function(cookies) {
+                    console.log('#### cookies', cookies);
+                    cookies.forEach((cookie) => {
+                        const cookieItem = document.createElement('li');
+                        cookieItem.innerHTML = `${cookie.name} : ${cookie.value}`;
+                        cookiesThirdPartiessList.appendChild(cookieItem);
+                        // chrome.cookies.remove({ url: "http" + (cookie.secure ? "s" : "") + "://" + cookie.domain + cookie.path, name: cookie.name });
+                    })
+                });
+            });
+        }
+    });
+});
+
+cookiesThirdPartiessClearBtn.addEventListener('click', () => {
+    chrome.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: currentTabId});
+    onMessage(message => {
+        if (message.type === 'GetAllOutgoingUrls') {
+            const hostnamesArr = message.payload.map(url => new URL(url).hostname.replace(/(https?:\/\/)?(www.)?/i, '')).filter((v, i, a) => a.indexOf(v) === i);
+            hostnamesArr.forEach(hostname => {
+                chrome.cookies.getAll({domain: hostname}, function(cookies) {
+                    cookies.forEach((cookie) => {
+                        chrome.cookies.remove({ url: "http" + (cookie.secure ? "s" : "") + "://" + cookie.domain + cookie.path, name: cookie.name });
+                    })
+                });
+            });
+        }
+    });
+    cookiesThirdPartiessClearBtn.append(' - DONE');
+
+    updateAllCookies();
+});
+
+
 
 // cookies By Current Page (set by current page)
 const cookiesOnCurrentSiteShowBtn = document.getElementsByClassName('js-cookies-show-current-site-btn')[0];

@@ -19,4 +19,7 @@ browser.runtime.onMessage.addListener((message, sender) => {
     // sendMessageGlobal({type: 'GetAllCookiesFromContent', payload: document.cookie})
     browser.browsingData.removeCache({hostnames: requestsFromTabs[message.payload] || [], since: 0});
   }
+  if (message.type === 'GetAllOutgoingUrls') {
+      browser.runtime.sendMessage({type: 'GetAllOutgoingUrls', payload: requestsFromTabs[message.payload]})
+  }
 });
