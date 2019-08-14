@@ -221,10 +221,9 @@ historyCurrentDomainClearBtn.addEventListener('click', () => {
     console.log('historyCurrentDomainClearBtn');
     chrome.history.search({text: currentPageDomain}, (history) => {
         history.forEach(historyItem => {
-            chrome.history.deleteUrl({url: historyItem.url}, () => {
-                historyCurrentDomainClearBtn.append(' - DONE');
-            });
-        })
+            chrome.history.deleteUrl({url: historyItem.url}, () => {});
+        });
+        historyCurrentDomainClearBtn.append(' - DONE');
     });
 });
 historyAllClearBtn.addEventListener('click', () => {
@@ -257,12 +256,12 @@ const downloadsForPastTenMinutesClearBtn = document.getElementsByClassName('js-d
 downloadsAllClearBtn.addEventListener('click', () => {
     console.log('downloadsAllClearBtn');
     chrome.browsingData.removeDownloads({}, () => {});
-    historyAllClearBtn.append(' - DONE');
+    downloadsAllClearBtn.append(' - DONE');
 });
 downloadsForPastTenMinutesClearBtn.addEventListener('click', () => {
     console.log('downloadsForPastTenMinutesRemoveBtn');
     chrome.browsingData.removeDownloads({since: new Date(Date.now() - 600000).getTime()}, () => {});
-    historyForPastTenMinutesClearBtn.append(' - DONE');
+    downloadsForPastTenMinutesClearBtn.append(' - DONE');
 });
 
 

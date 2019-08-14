@@ -16,11 +16,7 @@
 <body>
 
 
-<button class="js-cookies-open-all-btn">See all cookies</button>
-<!--<button class="js-cache-open-all-btn">See all cache</button>-->
-<button class="js-history-open-all-btn">See all history</button>
-<button class="js-downloads-open-all-btn">See all downloads</button>
-<p>* we can't lead user to 'cache' page, because it's been removed since v.66</p>
+<p>* we can't lead user to 'cache / cookies / history / downloads' page, because it doesn't exist</p>
 
 <h3>--- cookies By Domain ---</h3>
 <button class="js-cookies-show-by-domain-btn">Show all cookies set by </button>
@@ -64,13 +60,14 @@
 <button class="js-history-clear-current-domain-btn">Clear history for </button>
 <button class="js-history-clear-all-btn">Clear ALL history</button>
 <button class="js-history-clear-past-ten-minutes-btn">Clear all history for past 10 minutes</button>
-<p>* we can also show history just for current domain</p>
+<p>* we can also show all history / just for current domain</p>
 
 <h3>--- Downloads ---</h3>
 <!--<button class="js-downloads-clear-current-domain-btn">Clear files downloaded from </button>-->
 <button class="js-downloads-clear-all-btn">Clear ALL downloads</button>
 <button class="js-downloads-clear-past-ten-minutes-btn">Clear all downloads for past 10 minutes</button>
 <p>* we don't know on what site user was when he downloaded file. We can show sizes of the files, and it's how many files was downloaded/removed</p>
+<p>* Firefox has two different entities which contains information about downloaded files. So even when we delete it from 'downloads' list (in firefox settings) it still present at 'downloads history'</p>
 
 <br>
 <br>

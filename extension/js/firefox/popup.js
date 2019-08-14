@@ -59,32 +59,6 @@ browser.tabs.query({currentWindow: true, active: true}, function (tabs) {
 
 
 
-// open browser pages
-const cookiesOpenBrowserBtn = document.getElementsByClassName('js-cookies-open-all-btn')[0];
-const cacheOpenBrowserBtn = document.getElementsByClassName('js-cache-open-all-btn')[0];
-const downloadsOpenBrowserBtn = document.getElementsByClassName('js-downloads-open-all-btn')[0];
-const historyOpenBrowserBtn = document.getElementsByClassName('js-history-open-all-btn')[0];
-cookiesOpenBrowserBtn.addEventListener('click', () => {
-    browser.tabs.create({
-        active: true,
-        url: "browser://settings/siteData",
-    });
-});
-historyOpenBrowserBtn.addEventListener('click', () => {
-    browser.tabs.create({
-        active: true,
-        url: "browser://history/",
-    });
-});
-downloadsOpenBrowserBtn.addEventListener('click', () => {
-    browser.tabs.create({
-        active: true,
-        url: "browser://downloads/",
-    });
-});
-
-
-
 
 // cookies By Domain
 const cookiesByDomainShowBtn = document.getElementsByClassName('js-cookies-show-by-domain-btn')[0];
@@ -222,11 +196,11 @@ const historyForPastTenMinutesClearBtn = document.getElementsByClassName('js-his
 historyCurrentDomainClearBtn.addEventListener('click', () => {
     console.log('historyCurrentDomainClearBtn');
     browser.history.search({text: currentPageDomain}, (history) => {
+        console.log('history currentPageDomain', history);
         history.forEach(historyItem => {
-            browser.history.deleteUrl({url: historyItem.url}, () => {
-                historyCurrentDomainClearBtn.append(' - DONE');
-            });
-        })
+            browser.history.deleteUrl({url: historyItem.url}, () => {});
+        });
+        historyCurrentDomainClearBtn.append(' - DONE');
     });
 });
 historyAllClearBtn.addEventListener('click', () => {
@@ -250,21 +224,26 @@ const downloadsForPastTenMinutesClearBtn = document.getElementsByClassName('js-d
 //     browser.downloads.search({query: [currentPageDomain]}, (downloads) => {
 //         downloads.forEach(downloadsItem => {
 //             if (downloadsItem.exists) {
-//                 browser.downloads.removeFile(downloadsItem.id, () => {});
+//                 browser.downloads.erase(downloadsItem.id, () => {});
 //             }
 //         });
 //         downloadsCurrentDomainClearBtn.append(' - DONE');
 //     });
 // });
+browser.downloads.search({query: ['']}, (downloads) => {
+    console.log('downloads', downloads);
+});
 downloadsAllClearBtn.addEventListener('click', () => {
     console.log('downloadsAllClearBtn');
-    browser.browsingData.removeDownloads({}, () => {});
-    historyAllClearBtn.append(' - DONE');
+    browser.downloads.erase({limit: 10}).then(() => {
+        downloadsAllClearBtn.append(' - DONE');
+    });
 });
 downloadsForPastTenMinutesClearBtn.addEventListener('click', () => {
     console.log('downloadsForPastTenMinutesRemoveBtn');
-    browser.browsingData.removeDownloads({since: new Date(Date.now() - 600000).getTime()}, () => {});
-    historyForPastTenMinutesClearBtn.append(' - DONE');
+    browser.downloads.erase({endedAfter: new Date(Date.now() - 600000).getTime()}).then(() => {
+        downloadsForPastTenMinutesClearBtn.append(' - DONE');
+    });
 });
 
 
