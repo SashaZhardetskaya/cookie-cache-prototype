@@ -9,7 +9,7 @@
   },
   "background": {
     "scripts": [
-      "js/background.js"
+      "js/chrome/background.js"
     ],
     "persistent": true
   },
@@ -53,7 +53,7 @@
         "css/style.css"
       ],
       "js": [
-        "js/content.js"
+        "js/chrome/content.js"
       ]
     }
   ],

@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ef3935-b0e7-456f-b83d-d4a718078c91" name="Default Changelist" comment="fixed">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extension/html/popup-edge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extension/js/edge/background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extension/js/edge/content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extension/js/edge/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extension/manifest-edge.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.babelrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.flowconfig" beforeDir="false" />
@@ -426,10 +432,14 @@
       <change beforePath="$PROJECT_DIR$/../ci/pack-safari.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci/push-edge.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci/xar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extension/html/popup-ff.html" beforeDir="false" afterPath="$PROJECT_DIR$/extension/html/popup-ff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extension/html/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/extension/html/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/js/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/js/content.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/extension/js/firefox/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/extension/js/firefox/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extension/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/extension/js/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/js/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/manifest-chrome.json" beforeDir="false" afterPath="$PROJECT_DIR$/extension/manifest-chrome.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/extension/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../patch-content.js" beforeDir="false" />
@@ -509,8 +519,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extension/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="504">
+              <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -518,23 +528,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extension/js/firefox/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="240" column="3" lean-forward="true" selection-start-line="240" selection-start-column="3" selection-end-line="240" selection-end-column="3" />
+            <state relative-caret-position="293">
+              <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extension/js/firefox/content.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="70" lean-forward="true" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extension/js/content.js">
+        <entry file="file://$PROJECT_DIR$/extension/js/chrome/content.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
@@ -542,11 +543,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/extension/html/popup-ff.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/manifest-chrome.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="69" column="199" selection-start-line="69" selection-start-column="199" selection-end-line="69" selection-end-column="199" />
+            <state relative-caret-position="221">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extension/js/edge/popup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -554,22 +564,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extension/manifest-ff.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="6" lean-forward="true" selection-end-line="60" />
+            <state relative-caret-position="255">
+              <caret line="15" column="32" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extension/manifest-chrome.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extension/js/firefox/background.js">
+        <entry file="file://$PROJECT_DIR$/extension/js/edge/content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="10" column="188" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="188" />
             </state>
           </provider>
         </entry>
@@ -577,17 +582,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extension/html/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" selection-start-line="64" selection-end-line="65" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extension/js/popup.js">
+        <entry file="file://$PROJECT_DIR$/extension/html/popup-edge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="258" column="24" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
+            <state relative-caret-position="221">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="106" lean-forward="true" selection-start-column="106" selection-end-column="106" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -596,9 +613,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>GetPageDomain</find>
-      <find>+++</find>
-      <find>&amp;&amp;&amp;&amp;</find>
       <find>urls &amp;&amp;&amp;&amp; L</find>
       <find>js-cookies-test</find>
       <find>cookiesByDomainShowBtn</find>
@@ -624,11 +638,15 @@
       <find>cookies</find>
       <find>sendMessageToAllTabs</find>
       <find>cookiesFromCurrentSite</find>
-      <find>GetAllCookiesFromContent</find>
       <find>cookiesOpenBrowserBtn</find>
+      <find>firefox</find>
+      <find>document.cookie</find>
+      <find>.goo</find>
+      <find>GetAllCookiesFromContent</find>
     </findStrings>
     <replaceStrings>
       <replace>js/firefox/</replace>
+      <replace>edge</replace>
       <replace>browser</replace>
     </replaceStrings>
   </component>
@@ -642,13 +660,19 @@
         <option value="$PROJECT_DIR$/extension/js/background.js" />
         <option value="$PROJECT_DIR$/extension/firefox-manifest/manifest.json" />
         <option value="$PROJECT_DIR$/extension/manifest-ff.json" />
-        <option value="$PROJECT_DIR$/extension/manifest.json" />
         <option value="$PROJECT_DIR$/extension/js/firefox/background.js" />
         <option value="$PROJECT_DIR$/extension/js/firefox/content.js" />
-        <option value="$PROJECT_DIR$/extension/html/popup.html" />
         <option value="$PROJECT_DIR$/extension/js/popup.js" />
-        <option value="$PROJECT_DIR$/extension/js/firefox/popup.js" />
         <option value="$PROJECT_DIR$/extension/html/popup-ff.html" />
+        <option value="$PROJECT_DIR$/extension/manifest-edge.json" />
+        <option value="$PROJECT_DIR$/extension/manifest-chrome.json" />
+        <option value="$PROJECT_DIR$/extension/html/popup.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/extension/js/edge/content.js" />
+        <option value="$PROJECT_DIR$/extension/js/firefox/popup.js" />
+        <option value="$PROJECT_DIR$/extension/manifest.json" />
+        <option value="$PROJECT_DIR$/extension/html/popup-edge.html" />
+        <option value="$PROJECT_DIR$/extension/js/edge/popup.js" />
       </list>
     </option>
   </component>
@@ -704,6 +728,13 @@
               <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="extension" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="edge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cookie-cache-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cookie-cache-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="firefox" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -715,19 +746,21 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/extension" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extension/html" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension\html" />
+      <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension\js\edge" />
       <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension" />
       <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension\js\firefox" />
-      <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension\html" />
       <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension\firefox-manifest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype\extension\js\chrome" />
       <recent name="C:\Users\zhara\Desktop\Privacy\cookie-cache-prototype" />
     </key>
   </component>
@@ -753,21 +786,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565268081165</updated>
-      <workItem from="1565268082484" duration="64002000" />
+      <workItem from="1565268082484" duration="70740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64002000" />
+    <option name="totallyTimeSpent" value="70740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3286119" />
@@ -809,7 +842,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extension/js/background.js">
+    <entry file="file://$PROJECT_DIR$/extension/js/chrome/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
@@ -826,34 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extension/manifest-chrome.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extension/manifest-ff.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" lean-forward="true" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extension/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extension/js/firefox/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extension/js/content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -864,31 +873,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extension/html/popup.html">
+    <entry file="file://$PROJECT_DIR$/extension/html/popup-ff.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" selection-start-line="64" selection-end-line="65" />
+        <state relative-caret-position="167">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="200" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extension/js/popup.js">
+    <entry file="file://$PROJECT_DIR$/extension/js/chrome/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="258" column="24" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
+        <state relative-caret-position="1510">
+          <caret line="257" column="41" selection-start-line="257" selection-start-column="41" selection-end-line="257" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/edge/background.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/manifest-edge.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/manifest-chrome.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="106" lean-forward="true" selection-start-column="106" selection-end-column="106" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/edge/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="188" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/manifest-ff.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extension/js/firefox/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="240" column="3" lean-forward="true" selection-start-line="240" selection-start-column="3" selection-end-line="240" selection-end-column="3" />
+        <state relative-caret-position="293">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extension/html/popup-ff.html">
+    <entry file="file://$PROJECT_DIR$/extension/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="69" column="199" selection-start-line="69" selection-start-column="199" selection-end-line="69" selection-end-column="199" />
+        <state relative-caret-position="504">
+          <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/chrome/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/html/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/html/popup-edge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/js/edge/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
         </state>
       </provider>
     </entry>

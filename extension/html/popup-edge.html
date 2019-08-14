@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script async src="../js/chrome/popup.js"></script>
+    <script async src="../js/edge/popup.js"></script>
     <style>
         body {
             width: 550px;
@@ -16,11 +16,7 @@
 <body>
 
 
-<button class="js-cookies-open-all-btn">See all cookies</button>
-<!--<button class="js-cache-open-all-btn">See all cache</button>-->
-<button class="js-history-open-all-btn">See all history</button>
-<button class="js-downloads-open-all-btn">See all downloads</button>
-<p>* we can't lead user to 'cache' page, because it's been removed since v.66</p>
+<p>* we can't lead user to 'cache / cookies / history / downloads' page, because it doesn't exist</p>
 
 <h3>--- cookies By Domain ---</h3>
 <button class="js-cookies-show-by-domain-btn">Show all cookies set by </button>
@@ -30,6 +26,7 @@
 <button class="js-cookies-show-by-google-btn">Show all cookies set by 'google.com' (or any other site)</button>
 <ol class="js-cookies-show-by-google-list"></ol>
 <button class="js-cookies-clear-by-google-btn">Clear all cookies set by 'google.com' (or any other site)</button>
+<p>* edge do not search by all subdomains</p>
 
 
 <h3>--- cookies By Current Site ---</h3>
@@ -50,6 +47,8 @@
 
 <h3>--- Caches ---</h3>
 <button class="js-caches-clear-current-site-btn">Remove caches from current tab</button>
+<p>* technically we remove more cache, not only cached responses on requests from current tab.
+    E.g. on facebook we make request to 'https://google.com/images/sa31232j', so we remove all cached files from google.com from all tab</p>
 <button class="js-caches-clear-all-btn">Remove ALL caches</button>
 <button class="js-caches-clear-past-ten-minutes-btn">Remove all caches for past 10 minutes</button>
 <p>* we can NOT show caches by domain. We can only show requests, which response was cached earlier
@@ -69,6 +68,7 @@
 <button class="js-downloads-clear-all-btn">Clear ALL downloads</button>
 <button class="js-downloads-clear-past-ten-minutes-btn">Clear all downloads for past 10 minutes</button>
 <p>* we don't know on what site user was when he downloaded file. We can show sizes of the files, and it's how many files was downloaded/removed</p>
+<p>* Firefox has two different entities which contains information about downloaded files. So even when we delete it from 'downloads' list (in firefox settings) it still present at 'downloads history'</p>
 
 <br>
 <br>

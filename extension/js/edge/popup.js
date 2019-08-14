@@ -91,6 +91,7 @@ const cookiesByGoogleClearBtn = document.getElementsByClassName('js-cookies-clea
 cookiesByGoogleShowBtn.addEventListener('click', () => {
     cookiesByGoogleList.innerHTML = '';
     browser.cookies.getAll({domain: 'google.com'}, function(cookies) {
+        console.log('.google.com cookies', cookies);
         cookies.forEach((cookie) => {
             const cookieItem = document.createElement('li');
             cookieItem.innerHTML = `${cookie.name} : ${cookie.value}`;
@@ -99,7 +100,7 @@ cookiesByGoogleShowBtn.addEventListener('click', () => {
     });
 });
 cookiesByGoogleClearBtn.addEventListener('click', () => {
-    browser.cookies.getAll({domain: '.google.com'}, function(cookies) {
+    browser.cookies.getAll({domain: 'google.com'}, function(cookies) {
         cookies.forEach((cookie) => {
             browser.cookies.remove({ url: "http" + (cookie.secure ? "s" : "") + "://" + cookie.domain + cookie.path, name: cookie.name });
         })
@@ -126,6 +127,8 @@ cookiesOnCurrentSiteShowBtn.addEventListener('click', () => {
     })
 });
 cookiesOnCurrentSiteClearBtn.addEventListener('click', () => {
+    console.log('&&&&&&&& cookiesFromCurrentSite', cookiesFromCurrentSite);
+    console.log('&&&&&&&& allCookies', allCookies);
     const expandedCookieFromSite = allCookies.filter((cookieItem) => {
         for (let i=0; i < cookiesFromCurrentSite.length; i++) {
             if (cookiesFromCurrentSite[i].name === cookieItem.name && cookiesFromCurrentSite[i].value === cookieItem.value) {
@@ -133,6 +136,7 @@ cookiesOnCurrentSiteClearBtn.addEventListener('click', () => {
             }
         }
     });
+    console.log('&&&&&&&&&&& expandedCookieFromSite', expandedCookieFromSite);
     expandedCookieFromSite.forEach(cookie => {
         browser.cookies.remove({ url: "http" + (cookie.secure ? "s" : "") + "://" + cookie.domain + cookie.path, name: cookie.name });
     });
@@ -192,7 +196,7 @@ const historyForPastTenMinutesClearBtn = document.getElementsByClassName('js-his
 
 historyCurrentDomainClearBtn.addEventListener('click', () => {
     console.log('historyCurrentDomainClearBtn');
-    browser.history.search({text: currentPageDomain}, (history) => {
+    browser.history.search({text: currentPageDomain}).then((history) => {
         console.log('history currentPageDomain', history);
         history.forEach(historyItem => {
             browser.history.deleteUrl({url: historyItem.url}, () => {});
@@ -202,7 +206,7 @@ historyCurrentDomainClearBtn.addEventListener('click', () => {
 });
 historyAllClearBtn.addEventListener('click', () => {
     console.log('historyAllClearBtn');
-    browser.browsingData.removeHistory({}, () => {});
+    browser.browsingData.removeHistory({});
     historyAllClearBtn.append(' - DONE');
 });
 historyForPastTenMinutesClearBtn.addEventListener('click', () => {
@@ -247,13 +251,16 @@ downloadsForPastTenMinutesClearBtn.addEventListener('click', () => {
 onMessage(message => {
     console.log('received message: ', message);
     if (message.type === 'GetAllCookiesFromContent') {
-        cookiesFromCurrentSite = message.payload.split('; ').map(cookie => {
-            console.log('cookie');
-            return {
-                name: cookie.slice(0, cookie.indexOf('=')),
-                value: cookie.slice(cookie.indexOf('=') + 1, cookie.length),
-            }
-        });
+        console.log('+++ cookie', message.payload);
+
+        if (message.payload) { // TODO => edge does not show document.cookie when it's more then 3 requests in a row. That's why I added condition. It's not fo real code!! This works weird
+            cookiesFromCurrentSite = message.payload.split('; ').map(cookie => {
+                return {
+                    name: cookie.slice(0, cookie.indexOf('=')),
+                    value: cookie.slice(cookie.indexOf('=') + 1, cookie.length),
+                }
+            });
+        }
     }
 });
 

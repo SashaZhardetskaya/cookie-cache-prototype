@@ -1,0 +1,1 @@
+to load extension to any browser copy manifest-ff.json/manifest-edge.json/manifest-chrome.json to manifest.json
